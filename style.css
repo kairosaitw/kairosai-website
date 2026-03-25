@@ -743,6 +743,19 @@ img {
   transform: translateY(-2px);
 }
 
+a.store-badge:hover {
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.2);
+}
+
+.store-badge-coming {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.store-badge-coming:hover {
+  transform: none;
+}
+
 .store-badge svg {
   flex-shrink: 0;
 }
