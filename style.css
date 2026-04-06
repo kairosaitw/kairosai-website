@@ -1277,6 +1277,23 @@ a.store-badge:hover {
   box-shadow: 0 4px 20px rgba(245, 158, 11, 0.2);
 }
 
+.cta-badges-group {
+  margin-bottom: 20px;
+}
+
+.cta-badges-group:last-child {
+  margin-bottom: 0;
+}
+
+.cta-badges-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--amber-700);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .store-badge-coming {
   opacity: 0.55;
   cursor: default;
