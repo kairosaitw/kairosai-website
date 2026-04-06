@@ -668,17 +668,25 @@ img {
   width: 48px;
   height: 48px;
   min-width: 48px;
+  max-width: 48px;
+  max-height: 48px;
   background: var(--amber-50);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--amber-600);
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .sub-feature-icon svg {
   width: 24px;
   height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 24px;
+  max-height: 24px;
 }
 
 .sub-feature-title {
@@ -804,6 +812,9 @@ img {
 .merchant-feature-icon {
   width: 52px;
   height: 52px;
+  min-width: 52px;
+  max-width: 52px;
+  max-height: 52px;
   background: var(--amber-50);
   border-radius: 14px;
   display: flex;
@@ -811,11 +822,17 @@ img {
   justify-content: center;
   margin-bottom: 16px;
   color: var(--amber-600);
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .merchant-feature-icon svg {
   width: 26px;
   height: 26px;
+  min-width: 26px;
+  min-height: 26px;
+  max-width: 26px;
+  max-height: 26px;
 }
 
 .merchant-feature-title {
@@ -994,6 +1011,9 @@ img {
 .marketing-card-icon {
   width: 56px;
   height: 56px;
+  min-width: 56px;
+  max-width: 56px;
+  max-height: 56px;
   background: var(--amber-50);
   border-radius: 14px;
   display: flex;
@@ -1001,11 +1021,17 @@ img {
   justify-content: center;
   margin-bottom: 20px;
   color: var(--amber-600);
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .marketing-card-icon svg {
   width: 28px;
   height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  max-width: 28px;
+  max-height: 28px;
 }
 
 .marketing-card-title {
@@ -1114,8 +1140,13 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
-  max-width: 800px;
+  max-width: 720px;
   margin: 0 auto;
+}
+
+.demo-grid:has(> :only-child) {
+  grid-template-columns: 1fr;
+  max-width: 360px;
 }
 
 .demo-card {
