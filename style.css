@@ -823,49 +823,21 @@ img {
 
 /* Marketing Highlight (Viral Video) */
 .marketing-highlight {
-  background: linear-gradient(135deg, var(--gray-900) 0%, #1a1a2e 100%);
+  background: var(--gray-900);
   border-radius: 16px;
   padding: 56px 48px;
   margin-bottom: 48px;
-  position: relative;
-  overflow: hidden;
 }
 
-.marketing-highlight::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -20%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.15), transparent 70%);
-  border-radius: 50%;
-}
-
-.marketing-highlight-badge {
-  display: inline-block;
-  padding: 6px 16px;
-  background: var(--amber-500);
-  color: white;
-  font-size: 13px;
-  font-weight: 700;
-  border-radius: 100px;
-  margin-bottom: 28px;
-}
-
-.marketing-highlight-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: start;
-  position: relative;
+.marketing-highlight-inner {
+  max-width: 720px;
 }
 
 .marketing-highlight-title {
   font-size: clamp(28px, 3.5vw, 38px);
   font-weight: 800;
   line-height: 1.3;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   color: white;
 }
 
@@ -876,85 +848,73 @@ img {
 .marketing-highlight-desc {
   font-size: 17px;
   color: var(--gray-400);
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
-.marketing-steps {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.marketing-steps li {
+/* Pipeline flow */
+.marketing-pipeline {
   display: flex;
   align-items: flex-start;
-  gap: 14px;
-  color: var(--gray-300);
-  font-size: 15px;
+  gap: 12px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.pipeline-step {
+  flex: 1;
+  min-width: 140px;
+}
+
+.pipeline-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--amber-400);
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.pipeline-detail {
+  display: block;
+  font-size: 14px;
+  color: var(--gray-400);
   line-height: 1.6;
 }
 
-.step-num {
-  min-width: 28px;
-  height: 28px;
-  background: var(--amber-500);
-  color: white;
-  font-size: 13px;
-  font-weight: 700;
-  border-radius: 50%;
+.pipeline-arrow {
+  color: var(--gray-600);
+  font-size: 18px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* Viral routes as inline tags */
+.viral-routes-inline {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
-/* Viral Routes Visual */
-.viral-routes {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-
-.viral-route-card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 20px 16px;
-  text-align: center;
-  transition: all 0.3s var(--ease);
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.viral-route-card:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: var(--amber-500);
-  transform: translateY(-2px);
-}
-
-.viral-route-num {
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  color: var(--amber-400);
-  font-variant-numeric: tabular-nums;
-}
-
-.viral-route-name {
-  font-size: 15px;
-  font-weight: 700;
-  color: white;
-}
-
-.viral-route-desc {
-  font-size: 12px;
+.viral-routes-label {
+  font-size: 14px;
+  font-weight: 600;
   color: var(--gray-400);
+  margin-right: 4px;
 }
 
-.viral-route-card-auto {
-  background: rgba(245, 158, 11, 0.1);
-  border-color: rgba(245, 158, 11, 0.3);
+.viral-route-tag {
+  padding: 5px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-300);
+  border: 1px solid var(--gray-700);
+  border-radius: 6px;
+}
+
+.viral-route-tag--auto {
+  color: var(--amber-400);
+  border-color: var(--amber-700);
 }
 
 /* Marketing Sub-Features Grid */
@@ -1428,12 +1388,17 @@ a.contact-value:hover {
   }
 
   .marketing-highlight {
-    padding: 40px 28px;
+    padding: 36px 24px;
   }
 
-  .marketing-highlight-content {
-    grid-template-columns: 1fr;
-    gap: 36px;
+  .marketing-pipeline {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .pipeline-arrow {
+    transform: rotate(90deg);
+    align-self: center;
   }
 
   .marketing-grid {
@@ -1498,26 +1463,6 @@ a.contact-value:hover {
     grid-template-columns: 1fr;
   }
 
-  .viral-routes {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-  }
-
-  .viral-route-card {
-    padding: 14px 8px;
-  }
-
-  .viral-route-emoji {
-    font-size: 22px;
-  }
-
-  .viral-route-name {
-    font-size: 12px;
-  }
-
-  .viral-route-desc {
-    font-size: 10px;
-  }
 
   .social-platforms {
     flex-direction: column;
