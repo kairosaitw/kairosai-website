@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kairos AI — 凱洛斯人工智慧科技</title>
-  <meta name="description" content="Kairos AI 致力於用人工智慧解決生活中的小困擾。我們的第一款產品「美食抵家」，讓「今天吃什麼」不再是難題。">
+  <meta name="description" content="Kairos AI 致力於用人工智慧解決生活中的小困擾。美食抵家：AI 找餐推薦 + AI 行銷工具，讓餐廳老闆一鍵生成爆款短影音與社群文案。">
   <meta property="og:title" content="Kairos AI — 凱洛斯人工智慧科技">
-  <meta property="og:description" content="用 AI 解決生活中的小困擾，讓每一天都更輕鬆。">
+  <meta property="og:description" content="AI 找餐推薦 + AI 行銷工具。消費者 5 秒找到好餐廳，商家一鍵生成爆款短影音。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kairosailab.com">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%23F59E0B'/><text x='50' y='58' text-anchor='middle' fill='white' font-size='50' font-weight='900' font-family='sans-serif'>K</text></svg>">
@@ -25,8 +25,10 @@
       </a>
       <div class="nav-links" id="navLinks">
         <a href="#about" class="nav-link">關於我們</a>
-        <a href="#product" class="nav-link">產品</a>
-        <a href="#features" class="nav-link">功能特色</a>
+        <a href="#diner" class="nav-link">消費者</a>
+        <a href="#merchant" class="nav-link">商家版</a>
+        <a href="#marketing" class="nav-link">AI 行銷</a>
+        <a href="#demo" class="nav-link">Demo</a>
         <a href="#contact" class="nav-link">聯絡我們</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="選單">
@@ -54,12 +56,12 @@
         讓生活多一點<span class="hero-highlight">溫度</span>
       </h1>
       <p class="hero-subtitle">
-        我們相信，人工智慧不只是冰冷的技術，更能成為生活中溫暖的夥伴。<br>
-        Kairos AI 專注於打造有溫度的 AI 應用，解決日常生活中的小困擾。
+        消費者 5 秒找到好餐廳，商家一鍵生成爆款短影音。<br>
+        美食抵家 — 為消費者和餐廳老闆打造的 AI 美食生態系。
       </p>
       <div class="hero-actions">
-        <a href="#product" class="btn btn-primary">認識我們的產品</a>
-        <a href="#contact" class="btn btn-outline">聯絡我們</a>
+        <a href="#diner" class="btn btn-primary">我是消費者</a>
+        <a href="#merchant" class="btn btn-outline">我是餐廳老闆</a>
       </div>
     </div>
     <div class="hero-scroll-hint">
@@ -104,12 +106,12 @@
     </div>
   </section>
 
-  <!-- Product Section -->
-  <section class="section product" id="product">
+  <!-- Diner Section (Consumer) -->
+  <section class="section product" id="diner">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">OUR PRODUCT</span>
-        <h2 class="section-title">美食抵家</h2>
+        <span class="section-tag">FOR DINERS</span>
+        <h2 class="section-title">美食抵家 — 消費者版</h2>
         <p class="section-desc">極簡主義的美食決策與紀錄工具</p>
       </div>
 
@@ -168,106 +170,346 @@
           </div>
         </div>
       </div>
+
+      <!-- Diner Features -->
+      <div class="sub-features-grid">
+        <div class="sub-feature reveal">
+          <div class="sub-feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M24 14v10l7 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h4 class="sub-feature-title">AI 智慧推薦</h4>
+            <p class="sub-feature-desc">結合 GPS 定位與 Google 評論，自動篩選營業中的優質餐廳，只給你最好的 3 個選擇。</p>
+          </div>
+        </div>
+        <div class="sub-feature reveal">
+          <div class="sub-feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 12h32v28H8z" stroke="currentColor" stroke-width="2"/><path d="M16 8v8M32 8v8M8 20h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="28" r="2" fill="currentColor"/><circle cx="28" cy="28" r="2" fill="currentColor"/></svg>
+          </div>
+          <div>
+            <h4 class="sub-feature-title">美食日記</h4>
+            <p class="sub-feature-desc">月曆視圖記錄消費金額與心得，月報統計自動生成，累積專屬的美食地圖。</p>
+          </div>
+        </div>
+        <div class="sub-feature reveal">
+          <div class="sub-feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M6 36V14a4 4 0 014-4h28a4 4 0 014 4v16a4 4 0 01-4 4H12l-6 6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="18" cy="22" r="2" fill="currentColor"/><circle cx="24" cy="22" r="2" fill="currentColor"/><circle cx="30" cy="22" r="2" fill="currentColor"/></svg>
+          </div>
+          <div>
+            <h4 class="sub-feature-title">AI 聊天助手</h4>
+            <p class="sub-feature-desc">用自然語言跟巴豆夭聊天，語音輸入也行。想吃什麼說出來，它幫你找、幫你比。</p>
+          </div>
+        </div>
+        <div class="sub-feature reveal">
+          <div class="sub-feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="18" r="8" stroke="currentColor" stroke-width="2"/><path d="M10 40c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h4 class="sub-feature-title">吉祥物陪伴</h4>
+            <p class="sub-feature-desc">「巴豆夭」幫你挑餐廳、「小餓魔」幫你管帳。兩個 AI 小夥伴，讓找餐廳變有趣。</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section class="section features" id="features">
+  <!-- Merchant Section -->
+  <section class="section merchant-section" id="merchant">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">FEATURES</span>
-        <h2 class="section-title">為你想得更多</h2>
-        <p class="section-desc">不只推薦餐廳，更是你的美食生活助手</p>
+        <span class="section-tag">FOR MERCHANTS</span>
+        <h2 class="section-title">美食抵家 — 商家版</h2>
+        <p class="section-desc">專為餐廳老闆打造的 AI 營運助手</p>
       </div>
 
-      <div class="features-grid">
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
-              <path d="M24 14v10l7 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
+      <div class="merchant-hero reveal">
+        <div class="merchant-hero-text">
+          <h3 class="merchant-hero-title">
+            不只管店，<br>
+            <span class="text-amber">AI 幫你做行銷。</span>
+          </h3>
+          <p class="merchant-hero-desc">
+            菜單管理、訂單追蹤、優惠券發放 — 這些只是基本功。<br>
+            真正的亮點是：AI 自動幫你生成社群文案、行銷海報和爆款短影音，<br>
+            一鍵發布到 Threads、Facebook、Instagram。
+          </p>
+        </div>
+        <div class="merchant-hero-visual">
+          <div class="phone-mockup phone-mockup-merchant">
+            <div class="phone-screen">
+              <div class="phone-status-bar">
+                <span>9:41</span>
+                <span></span>
+              </div>
+              <div class="phone-app merchant-app">
+                <div class="merchant-tab-bar">
+                  <span class="merchant-tab active">行銷</span>
+                  <span class="merchant-tab">戰情</span>
+                  <span class="merchant-tab">顧問</span>
+                  <span class="merchant-tab">快報</span>
+                </div>
+                <div class="merchant-card">
+                  <div class="merchant-card-label">爆款短影音</div>
+                  <div class="merchant-card-title">一鍵生成 15 秒短影音</div>
+                  <div class="merchant-card-desc">上傳 4 張美食照，AI 自動產出旁白、字幕、配樂</div>
+                </div>
+                <div class="merchant-card">
+                  <div class="merchant-card-label">AI 文案</div>
+                  <div class="merchant-card-title">6 種風格任你挑</div>
+                  <div class="merchant-card-desc">熱情活潑、專業質感、搞笑幽默...</div>
+                </div>
+                <div class="phone-btn">開始生成</div>
+              </div>
+            </div>
           </div>
-          <h3 class="feature-title">AI 智慧推薦</h3>
-          <p class="feature-desc">
-            結合 GPS 定位、Google 評論和 AI 分析，自動篩選營業中、評價優良的餐廳。
-            只給你最好的 3 個選擇，不再選擇困難。
+        </div>
+      </div>
+
+      <!-- Merchant Features Grid -->
+      <div class="merchant-features-grid">
+        <div class="merchant-feature-card reveal">
+          <div class="merchant-feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/><path d="M8 16h32M16 8v32" stroke="currentColor" stroke-width="2"/><circle cx="28" cy="28" r="4" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h4 class="merchant-feature-title">菜單管理</h4>
+          <p class="merchant-feature-desc">分類整理、照片上傳、招牌菜標記，食物照還能一鍵 AI 美顏。</p>
+        </div>
+        <div class="merchant-feature-card reveal">
+          <div class="merchant-feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M12 36l6-8 6 4 6-12 6 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h4 class="merchant-feature-title">戰情室</h4>
+          <p class="merchant-feature-desc">營收、訂單、評論趨勢一目了然。大字體設計，老闆一看就懂。</p>
+        </div>
+        <div class="merchant-feature-card reveal">
+          <div class="merchant-feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M6 36V14a4 4 0 014-4h28a4 4 0 014 4v16a4 4 0 01-4 4H12l-6 6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M18 18l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4 class="merchant-feature-title">AI 顧問</h4>
+          <p class="merchant-feature-desc">巴豆夭化身你的個人顧問，隨時問營運數據、客群分析、改善建議。</p>
+        </div>
+        <div class="merchant-feature-card reveal">
+          <div class="merchant-feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 12h32v28H8z" stroke="currentColor" stroke-width="2"/><path d="M16 8v8M32 8v8M8 20h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 26h6M16 32h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h4 class="merchant-feature-title">每日快報</h4>
+          <p class="merchant-feature-desc">每天早上收到 AI 營運摘要，7 種主題輪替：趨勢、菜品、客群、優惠券健檢。</p>
+        </div>
+        <div class="merchant-feature-card reveal">
+          <div class="merchant-feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M14 8h20l6 10-16 24L8 18z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 18h32M20 18l4 24 4-24" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h4 class="merchant-feature-title">優惠券系統</h4>
+          <p class="merchant-feature-desc">折扣 % 或固定金額，設定期限、追蹤使用次數、成效分析一手掌握。</p>
+        </div>
+        <div class="merchant-feature-card reveal">
+          <div class="merchant-feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="6" width="28" height="36" rx="4" stroke="currentColor" stroke-width="2"/><path d="M18 14h12M18 22h12M18 30h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="34" cy="34" r="8" fill="white" stroke="currentColor" stroke-width="2"/><path d="M31 34l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4 class="merchant-feature-title">訂單管理</h4>
+          <p class="merchant-feature-desc">接單、備餐、完成 — 完整狀態流程，搭配庫存追蹤與排程設定。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Marketing Center (HERO SECTION) -->
+  <section class="section marketing-section" id="marketing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">AI MARKETING CENTER</span>
+        <h2 class="section-title">AI 行銷中心</h2>
+        <p class="section-desc">餐廳老闆的一人行銷部門 — 不需要設計師，不需要文案，AI 全部搞定</p>
+      </div>
+
+      <!-- Viral Video Feature (Main Highlight) -->
+      <div class="marketing-highlight reveal">
+        <div class="marketing-highlight-badge">主力功能</div>
+        <div class="marketing-highlight-content">
+          <div class="marketing-highlight-text">
+            <h3 class="marketing-highlight-title">
+              爆款短影音<br>
+              <span class="text-amber">15 秒征服演算法</span>
+            </h3>
+            <p class="marketing-highlight-desc">
+              上傳 4 張美食照片，AI 自動完成一切：
+            </p>
+            <ul class="marketing-steps">
+              <li>
+                <span class="step-num">1</span>
+                <span>Gemini AI 撰寫腳本 — 鉤子、旁白、CTA 一次到位</span>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <span>Veo AI 生成電影級鏡頭運動 — 推軌、環繞、俯拍</span>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <span>自動配音 + 字幕 + 配樂 — 完整影片直接下載</span>
+              </li>
+              <li>
+                <span class="step-num">4</span>
+                <span>一鍵發布到 Threads、Facebook、Instagram</span>
+              </li>
+            </ul>
+          </div>
+          <div class="marketing-highlight-visual">
+            <div class="viral-routes">
+              <div class="viral-route-card">
+                <span class="viral-route-emoji">💰</span>
+                <span class="viral-route-name">秀價格</span>
+                <span class="viral-route-desc">CP 值衝擊</span>
+              </div>
+              <div class="viral-route-card">
+                <span class="viral-route-emoji">🍜</span>
+                <span class="viral-route-name">秀美食</span>
+                <span class="viral-route-desc">感官轟炸</span>
+              </div>
+              <div class="viral-route-card">
+                <span class="viral-route-emoji">🎯</span>
+                <span class="viral-route-name">猜價遊戲</span>
+                <span class="viral-route-desc">互動引流</span>
+              </div>
+              <div class="viral-route-card">
+                <span class="viral-route-emoji">🔥</span>
+                <span class="viral-route-name">蹭話題</span>
+                <span class="viral-route-desc">流量密碼</span>
+              </div>
+              <div class="viral-route-card">
+                <span class="viral-route-emoji">🎁</span>
+                <span class="viral-route-name">開盲盒</span>
+                <span class="viral-route-desc">驚喜開箱</span>
+              </div>
+              <div class="viral-route-card viral-route-card-auto">
+                <span class="viral-route-emoji">✨</span>
+                <span class="viral-route-name">自動安排</span>
+                <span class="viral-route-desc">AI 最佳策略</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marketing Sub-Features -->
+      <div class="marketing-grid">
+        <div class="marketing-card reveal">
+          <div class="marketing-card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M10 38V16l14-8 14 8v22l-14 8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 16l14 8 14-8M24 24v22" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h4 class="marketing-card-title">AI 文案生成</h4>
+          <p class="marketing-card-desc">6 種風格一鍵切換</p>
+          <div class="style-tags">
+            <span class="style-tag">熱情活潑</span>
+            <span class="style-tag">專業質感</span>
+            <span class="style-tag">溫馨暖心</span>
+            <span class="style-tag">俐落直接</span>
+            <span class="style-tag">文青慢活</span>
+            <span class="style-tag">搞笑幽默</span>
+          </div>
+          <p class="marketing-card-detail">
+            三層 AI 架構：基礎規則 + 風格語調 + 在地脈絡。
+            Hook-Story-Offer 結構，每一篇都是精準說服。
           </p>
         </div>
 
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 12h32v28H8z" stroke="currentColor" stroke-width="2"/>
-              <path d="M16 8v8M32 8v8M8 20h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <circle cx="20" cy="28" r="2" fill="currentColor"/>
-              <circle cx="28" cy="28" r="2" fill="currentColor"/>
-              <circle cx="20" cy="34" r="2" fill="currentColor"/>
-            </svg>
+        <div class="marketing-card reveal">
+          <div class="marketing-card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="6" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18" r="4" stroke="currentColor" stroke-width="2"/><path d="M6 32l10-10 8 8 8-12 10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3 class="feature-title">美食日記</h3>
-          <p class="feature-desc">
-            收藏喜歡的餐廳、記錄消費金額和心得。
-            月曆視圖讓你一眼回顧每天吃了什麼，累積專屬的美食地圖。
+          <h4 class="marketing-card-title">AI 行銷海報</h4>
+          <p class="marketing-card-desc">自動排版，多尺寸模板</p>
+          <p class="marketing-card-detail">
+            上傳食物照片，AI 自動裁切、套用品牌模板，
+            加上文案標題與標籤，一張專業海報立即產出。
           </p>
         </div>
 
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="8" y="16" width="32" height="22" rx="4" stroke="currentColor" stroke-width="2"/>
-              <path d="M16 16V12a8 8 0 1116 0v4" stroke="currentColor" stroke-width="2"/>
-              <circle cx="24" cy="27" r="3" fill="currentColor"/>
-              <path d="M24 30v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
+        <div class="marketing-card reveal">
+          <div class="marketing-card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="16" cy="24" r="10" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="24" r="10" stroke="currentColor" stroke-width="2"/><path d="M24 17.6a10 10 0 010 12.8" stroke="currentColor" stroke-width="2"/></svg>
           </div>
-          <h3 class="feature-title">店家自主管理</h3>
-          <p class="feature-desc">
-            餐廳老闆可以直接在 App 裡管理店家資訊、上傳菜單、
-            發放優惠券，讓更多附近的顧客認識你。
-          </p>
+          <h4 class="marketing-card-title">社群一鍵發布</h4>
+          <p class="marketing-card-desc">連接帳號，同步發文</p>
+          <div class="social-platforms">
+            <div class="social-platform">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.5 12.068V11.5h4.25v.568c0 2.457.57 4.376 1.693 5.703 1.08 1.277 2.678 1.946 4.75 1.977 2.072-.031 3.67-.7 4.75-1.977 1.123-1.327 1.693-3.246 1.693-5.703V11.5h4.25v.568c0 3.518-.85 6.372-2.495 8.423-1.85 2.304-4.603 3.485-8.184 3.509h-.02zM7.5 4.577C7.5 2.052 9.474 0 12 0s4.5 2.052 4.5 4.577S14.526 9.154 12 9.154 7.5 7.102 7.5 4.577z"/></svg>
+              <span>Threads</span>
+            </div>
+            <div class="social-platform">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span>Facebook</span>
+            </div>
+            <div class="social-platform">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              <span>Instagram</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marketing Stats -->
+      <div class="marketing-stats reveal">
+        <div class="marketing-stat">
+          <span class="marketing-stat-num">5 秒</span>
+          <span class="marketing-stat-label">生成一篇社群文案</span>
+        </div>
+        <div class="marketing-stat-divider"></div>
+        <div class="marketing-stat">
+          <span class="marketing-stat-num">1 分鐘</span>
+          <span class="marketing-stat-label">產出一支短影音</span>
+        </div>
+        <div class="marketing-stat-divider"></div>
+        <div class="marketing-stat">
+          <span class="marketing-stat-num">6 種</span>
+          <span class="marketing-stat-label">病毒路線策略</span>
+        </div>
+        <div class="marketing-stat-divider"></div>
+        <div class="marketing-stat">
+          <span class="marketing-stat-num">3 大</span>
+          <span class="marketing-stat-label">社群平台同步發布</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Section -->
+  <section class="section demo-section" id="demo">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">DEMO</span>
+        <h2 class="section-title">實際產出範例</h2>
+        <p class="section-desc">以下短影音 100% 由 AI 自動生成 — 從腳本、鏡頭、旁白到字幕，全部一鍵完成</p>
+      </div>
+
+      <div class="demo-grid">
+        <div class="demo-card reveal">
+          <div class="demo-video-wrapper">
+            <video
+              class="demo-video"
+              src="videos/demo-1.mp4"
+              controls
+              playsinline
+              preload="metadata"
+            ></video>
+            <div class="demo-video-placeholder">
+              <svg viewBox="0 0 48 48" fill="none" width="48" height="48"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M20 16l12 8-12 8z" fill="currentColor"/></svg>
+              <span>影片載入中...</span>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-route-tag">AI 自動生成</span>
+            <p class="demo-caption">爆款短影音 — 全自動產出範例</p>
+          </div>
         </div>
 
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 36l6-8 6 4 6-12 6 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
-            </svg>
+        <div class="demo-card reveal">
+          <div class="demo-image-wrapper">
+            <img class="demo-image" src="videos/S__28033027.jpg" alt="AI 文案生成範例 — 溫馨暖心風格" loading="lazy">
           </div>
-          <h3 class="feature-title">AI 行銷工具</h3>
-          <p class="feature-desc">
-            一鍵生成社群文案、行銷配圖和短影音。
-            不需要設計師，AI 幫你打造專業的行銷素材，輕鬆發限動。
-          </p>
-        </div>
-
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="18" r="8" stroke="currentColor" stroke-width="2"/>
-              <path d="M10 40c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
+          <div class="demo-info">
+            <span class="demo-route-tag">AI 文案生成</span>
+            <p class="demo-caption">溫馨暖心風格 — 含照片美顏對比</p>
           </div>
-          <h3 class="feature-title">吉祥物陪伴</h3>
-          <p class="feature-desc">
-            「巴豆夭」幫你挑餐廳、寫推薦理由；「小餓魔」幫你管帳、精打細算。
-            兩個 AI 小夥伴，讓找餐廳變成有趣的事。
-          </p>
-        </div>
-
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 8l4 8 8 1.5-6 5.5 1.5 8.5L24 28l-7.5 3.5L18 23l-6-5.5 8-1.5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M24 34v8M16 38h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">在地深耕</h3>
-          <p class="feature-desc">
-            專為台灣在地飲食文化設計。從夜市小吃到咖啡廳，
-            每一個推薦都懂你對「好吃」的定義。
-          </p>
         </div>
       </div>
     </div>
@@ -277,20 +519,20 @@
   <section class="section cta">
     <div class="container">
       <div class="cta-card reveal">
-        <h2 class="cta-title">準備好讓 AI 幫你解決「吃什麼」了嗎？</h2>
-        <p class="cta-desc">美食抵家已在 App Store 上架，立即下載體驗！</p>
+        <h2 class="cta-title">準備好讓 AI 幫你找餐廳、做行銷了嗎？</h2>
+        <p class="cta-desc">美食抵家消費者版正在審核中，商家版已開放使用！</p>
         <div class="cta-badges">
-          <a href="https://apps.apple.com/app/id6756526037" target="_blank" rel="noopener" class="store-badge">
+          <div class="store-badge store-badge-coming">
             <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
             <div>
-              <span class="store-badge-sub">下載於</span>
+              <span class="store-badge-sub">審核中</span>
               <span class="store-badge-main">App Store</span>
             </div>
-          </a>
+          </div>
           <div class="store-badge store-badge-coming">
             <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
             <div>
-              <span class="store-badge-sub">即將登上</span>
+              <span class="store-badge-sub">審核中</span>
               <span class="store-badge-main">Google Play</span>
             </div>
           </div>

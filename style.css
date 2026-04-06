@@ -142,7 +142,7 @@ img {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 28px;
 }
 
 .nav-link {
@@ -422,7 +422,7 @@ img {
 .section-desc {
   font-size: 18px;
   color: var(--text-secondary);
-  max-width: 560px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -479,7 +479,7 @@ img {
   color: var(--text-secondary);
 }
 
-/* --- Product Section --- */
+/* --- Product Section (Diner) --- */
 .product-hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -643,31 +643,355 @@ img {
   margin-top: 4px;
 }
 
-/* --- Features --- */
-.features {
+/* --- Diner Sub-Features --- */
+.sub-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 72px;
+}
+
+.sub-feature {
+  display: flex;
+  gap: 20px;
+  padding: 28px;
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  transition: transform 0.3s var(--ease);
+}
+
+.sub-feature:hover {
+  transform: translateY(-2px);
+}
+
+.sub-feature-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background: var(--amber-50);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--amber-600);
+}
+
+.sub-feature-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.sub-feature-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.sub-feature-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* --- Merchant Section --- */
+.merchant-section {
   background: var(--bg-secondary);
 }
 
-.features-grid {
+.merchant-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 72px;
+}
+
+.merchant-hero-title {
+  font-size: clamp(28px, 3.5vw, 38px);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.merchant-hero-desc {
+  font-size: 17px;
+  line-height: 1.9;
+  color: var(--text-secondary);
+}
+
+.merchant-hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+/* Merchant Phone Mockup */
+.merchant-app {
+  gap: 12px !important;
+}
+
+.merchant-tab-bar {
+  display: flex;
+  gap: 4px;
+  background: var(--gray-100);
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.merchant-tab {
+  flex: 1;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gray-500);
+  border-radius: 8px;
+}
+
+.merchant-tab.active {
+  background: white;
+  color: var(--amber-600);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.merchant-card {
+  background: white;
+  border: 1.5px solid var(--gray-200);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.merchant-card-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--amber-600);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.merchant-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.merchant-card-desc {
+  font-size: 11px;
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+
+/* Merchant Features Grid */
+.merchant-features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
-.feature-card {
+.merchant-feature-card {
   background: white;
   border-radius: 20px;
-  padding: 36px 28px;
-  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+  padding: 32px 24px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
 }
 
-.feature-card:hover {
+.merchant-feature-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
 
-.feature-icon {
+.merchant-feature-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--amber-50);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: var(--amber-600);
+}
+
+.merchant-feature-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.merchant-feature-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.merchant-feature-desc {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+/* ============================================
+   AI Marketing Center (HERO SECTION)
+   ============================================ */
+.marketing-section {
+  background: var(--bg-primary);
+}
+
+/* Marketing Highlight (Viral Video) */
+.marketing-highlight {
+  background: linear-gradient(135deg, var(--gray-900) 0%, #1a1a2e 100%);
+  border-radius: 28px;
+  padding: 56px 48px;
+  margin-bottom: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.marketing-highlight::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.15), transparent 70%);
+  border-radius: 50%;
+}
+
+.marketing-highlight-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: var(--amber-500);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 100px;
+  margin-bottom: 28px;
+}
+
+.marketing-highlight-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  position: relative;
+}
+
+.marketing-highlight-title {
+  font-size: clamp(28px, 3.5vw, 38px);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.marketing-highlight-title .text-amber {
+  color: var(--amber-400);
+}
+
+.marketing-highlight-desc {
+  font-size: 17px;
+  color: var(--gray-400);
+  margin-bottom: 24px;
+}
+
+.marketing-steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.marketing-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  color: var(--gray-300);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.step-num {
+  min-width: 28px;
+  height: 28px;
+  background: var(--amber-500);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Viral Routes Visual */
+.viral-routes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.viral-route-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px 16px;
+  text-align: center;
+  transition: all 0.3s var(--ease);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.viral-route-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--amber-500);
+  transform: translateY(-2px);
+}
+
+.viral-route-emoji {
+  font-size: 28px;
+}
+
+.viral-route-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.viral-route-desc {
+  font-size: 12px;
+  color: var(--gray-400);
+}
+
+.viral-route-card-auto {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+/* Marketing Sub-Features Grid */
+.marketing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.marketing-card {
+  background: white;
+  border-radius: 20px;
+  padding: 36px 28px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--gray-100);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.marketing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.marketing-card-icon {
   width: 56px;
   height: 56px;
   background: var(--amber-50);
@@ -679,20 +1003,195 @@ img {
   color: var(--amber-600);
 }
 
-.feature-icon svg {
+.marketing-card-icon svg {
   width: 28px;
   height: 28px;
 }
 
-.feature-title {
+.marketing-card-title {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
-.feature-desc {
+.marketing-card-desc {
   font-size: 15px;
-  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.marketing-card-detail {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* Style Tags */
+.style-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.style-tag {
+  padding: 4px 12px;
+  background: var(--amber-50);
+  color: var(--amber-700);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 100px;
+  border: 1px solid var(--amber-200);
+}
+
+/* Social Platforms */
+.social-platforms {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.social-platform {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--gray-50);
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.social-platform svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Marketing Stats */
+.marketing-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  background: var(--amber-50);
+  border-radius: 20px;
+  border: 1px solid var(--amber-200);
+}
+
+.marketing-stat {
+  text-align: center;
+}
+
+.marketing-stat-num {
+  display: block;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--amber-600);
+  margin-bottom: 4px;
+}
+
+.marketing-stat-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.marketing-stat-divider {
+  width: 1px;
+  height: 48px;
+  background: var(--amber-200);
+}
+
+/* ============================================
+   Demo Section
+   ============================================ */
+.demo-section {
+  background: var(--bg-secondary);
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.demo-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.demo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.demo-video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background: var(--gray-900);
+  overflow: hidden;
+}
+
+.demo-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.demo-video-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--gray-500);
+  font-size: 14px;
+}
+
+.demo-video[src]:not([src=""]) ~ .demo-video-placeholder {
+  display: none;
+}
+
+.demo-image-wrapper {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background: var(--gray-100);
+  overflow: hidden;
+}
+
+.demo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.demo-info {
+  padding: 16px 20px;
+}
+
+.demo-route-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  background: var(--amber-50);
+  color: var(--amber-700);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.demo-caption {
+  font-size: 14px;
   color: var(--text-secondary);
 }
 
@@ -867,7 +1366,9 @@ a.contact-value:hover {
   transform: translateY(0);
 }
 
-/* --- Responsive --- */
+/* ============================================
+   Responsive
+   ============================================ */
 @media (max-width: 900px) {
   :root {
     --section-py: 80px;
@@ -892,9 +1393,51 @@ a.contact-value:hover {
     justify-content: center;
   }
 
-  .features-grid {
+  .sub-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .merchant-hero {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .merchant-hero-visual {
+    order: -1;
+  }
+
+  .merchant-features-grid {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+
+  .marketing-highlight {
+    padding: 40px 28px;
+  }
+
+  .marketing-highlight-content {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .marketing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .marketing-stats {
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 32px 24px;
+  }
+
+  .marketing-stat-divider {
+    display: none;
+  }
+
+  .demo-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
   }
 
   .footer-inner {
@@ -936,8 +1479,34 @@ a.contact-value:hover {
     font-size: 32px;
   }
 
-  .features-grid {
+  .merchant-features-grid {
     grid-template-columns: 1fr;
+  }
+
+  .viral-routes {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .viral-route-card {
+    padding: 14px 8px;
+  }
+
+  .viral-route-emoji {
+    font-size: 22px;
+  }
+
+  .viral-route-name {
+    font-size: 12px;
+  }
+
+  .viral-route-desc {
+    font-size: 10px;
+  }
+
+  .social-platforms {
+    flex-direction: column;
+    gap: 8px;
   }
 
   .cta-card {
