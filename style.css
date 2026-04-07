@@ -1218,6 +1218,20 @@ img {
   font-weight: 500;
 }
 
+.team-bio {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 240px;
+}
+
+.team-bio {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 240px;
+}
+
 .team-linkedin {
   color: var(--text-muted);
   transition: color 0.2s var(--ease);
