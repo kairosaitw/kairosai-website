@@ -3,662 +3,438 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kairos AI — 凱洛斯智慧科技</title>
-  <meta name="description" content="美食抵家：餐廳老闆的 AI 行銷助手。AI 自動產出爆款短影音、社群文案、食物美顏。零抽成線上點餐系統，餐廳老闆的一人行銷部門。">
-  <meta property="og:title" content="Kairos AI — 餐廳老闆的 AI 行銷助手">
-  <meta property="og:description" content="不會拍影片？不會寫文案？AI 幫你搞定。零抽成線上點餐，每月只要 NT$1,190。">
+  <title>美食抵家｜台灣美食社群與餐飲 AI 行銷平台</title>
+  <meta name="description" content="美食抵家是台灣美食社群與餐飲 AI 行銷平台。幫食客找店、收藏、分享，也幫餐廳把照片、菜單與顧客內容變成美圖、文案、短影音與活動素材。">
+  <meta property="og:title" content="美食抵家｜台灣美食社群與餐飲 AI 行銷平台">
+  <meta property="og:description" content="幫食客找店、收藏、分享，也幫餐廳把照片、菜單與顧客內容變成美圖、文案、短影音與活動素材。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kairosailab.com">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%23F59E0B'/><text x='50' y='58' text-anchor='middle' fill='white' font-size='50' font-weight='900' font-family='sans-serif'>K</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect rx='22' width='100' height='100' fill='%23B85C38'/%3E%3Ctext x='50' y='62' text-anchor='middle' fill='white' font-size='52' font-weight='800' font-family='Arial,sans-serif'%3E食%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
+  <nav class="site-nav" id="siteNav" aria-label="主選單">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">
-        <span class="nav-logo-icon">K</span>
-        <span class="nav-logo-text">Kairos AI</span>
+      <a class="brand" href="#top" aria-label="回到首頁">
+        <span class="brand-mark">食</span>
+        <span class="brand-name">美食抵家</span>
       </a>
-      <div class="nav-links" id="navLinks">
-        <a href="#marketing" class="nav-link">AI 行銷</a>
-        <a href="#demo" class="nav-link">Demo</a>
-        <a href="#merchant" class="nav-link">商家功能</a>
-        <a href="#diner" class="nav-link">消費者版</a>
-        <a href="#team" class="nav-link">團隊</a>
-        <a href="#about" class="nav-link">關於我們</a>
-        <a href="#contact" class="nav-link">聯絡我們</a>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="選單">
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="navLinks">
         <span></span>
         <span></span>
         <span></span>
       </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#positioning">我們做什麼</a>
+        <a href="#merchant">商家服務</a>
+        <a href="#diner">食客 App</a>
+        <a href="#demo">成果展示</a>
+        <a href="#rollout">服務地區</a>
+        <a href="#team">團隊</a>
+        <a href="#contact" class="nav-cta">合作洽詢</a>
+      </div>
     </div>
   </nav>
 
-  <!-- Hero Section — 商家痛點先行 -->
-  <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="hero-badge-dot"></span>
-        餐廳老闆的 AI 行銷助手
-      </div>
-      <h1 class="hero-title">
-        不會拍影片？不會寫文案？<br>
-        <span class="hero-highlight">AI 幫你搞定。</span>
-      </h1>
-      <p class="hero-subtitle">
-        上傳 4 張照片，AI 自動產出短影音 + 文案。零抽成線上點餐，不被平台抽 30%。<br>
-        不需要設計師，不需要小編，Pro 訂閱每月只要 NT$1,190。
-      </p>
-      <div class="hero-actions">
-        <a href="#demo" class="btn btn-primary">看 Demo</a>
-        <a href="#marketing" class="btn btn-outline">了解更多</a>
-      </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span>往下探索</span>
-      <div class="hero-scroll-arrow"></div>
-    </div>
-  </section>
-
-  <!-- 1. AI Marketing Center (主打區塊) -->
-  <section class="section marketing-section" id="marketing">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">AI MARKETING CENTER</span>
-        <h2 class="section-title">AI 行銷中心</h2>
-        <p class="section-desc">餐廳老闆的一人行銷部門 — 不需要設計師，不需要文案，AI 全部搞定</p>
-      </div>
-
-      <!-- Viral Video Feature (Main Highlight) -->
-      <div class="marketing-highlight reveal">
-        <div class="marketing-highlight-badge">主力功能</div>
-        <div class="marketing-highlight-content">
-          <div class="marketing-highlight-text">
-            <h3 class="marketing-highlight-title">
-              爆款短影音<br>
-              <span class="text-amber">15 秒征服演算法</span>
-            </h3>
-            <p class="marketing-highlight-desc">
-              上傳 4 張美食照片，AI 自動完成一切：
-            </p>
-            <ul class="marketing-steps">
-              <li>
-                <span class="step-num">1</span>
-                <span>Gemini AI 撰寫腳本 — 鉤子、旁白、CTA 一次到位</span>
-              </li>
-              <li>
-                <span class="step-num">2</span>
-                <span>Veo AI 生成電影級鏡頭運動 — 推軌、環繞、俯拍</span>
-              </li>
-              <li>
-                <span class="step-num">3</span>
-                <span>自動配音 + 字幕 + 配樂 — 完整影片直接下載</span>
-              </li>
-              <li>
-                <span class="step-num">4</span>
-                <span>一鍵下載，直接發到你的社群</span>
-              </li>
-            </ul>
-          </div>
-          <div class="marketing-highlight-visual">
-            <div class="viral-routes">
-              <div class="viral-route-card">
-                <span class="viral-route-num">01</span>
-                <span class="viral-route-name">秀價格</span>
-                <span class="viral-route-desc">CP 值衝擊</span>
-              </div>
-              <div class="viral-route-card">
-                <span class="viral-route-num">02</span>
-                <span class="viral-route-name">秀美食</span>
-                <span class="viral-route-desc">感官轟炸</span>
-              </div>
-              <div class="viral-route-card">
-                <span class="viral-route-num">03</span>
-                <span class="viral-route-name">猜價遊戲</span>
-                <span class="viral-route-desc">互動引流</span>
-              </div>
-              <div class="viral-route-card">
-                <span class="viral-route-num">04</span>
-                <span class="viral-route-name">蹭話題</span>
-                <span class="viral-route-desc">流量密碼</span>
-              </div>
-              <div class="viral-route-card">
-                <span class="viral-route-num">05</span>
-                <span class="viral-route-name">開盲盒</span>
-                <span class="viral-route-desc">驚喜開箱</span>
-              </div>
-              <div class="viral-route-card viral-route-card-auto">
-                <span class="viral-route-num">AUTO</span>
-                <span class="viral-route-name">自動安排</span>
-                <span class="viral-route-desc">AI 最佳策略</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Marketing Sub-Features -->
-      <div class="marketing-grid">
-        <div class="marketing-card reveal">
-          <div class="marketing-card-icon">
-            <svg viewBox="0 0 48 48" fill="none" width="28" height="28"><path d="M10 38V16l14-8 14 8v22l-14 8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 16l14 8 14-8M24 24v22" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-          </div>
-          <h4 class="marketing-card-title">AI 文案生成</h4>
-          <p class="marketing-card-desc">6 種風格一鍵切換</p>
-          <div class="style-tags">
-            <span class="style-tag">熱情活潑</span>
-            <span class="style-tag">專業質感</span>
-            <span class="style-tag">溫馨暖心</span>
-            <span class="style-tag">俐落直接</span>
-            <span class="style-tag">文青慢活</span>
-            <span class="style-tag">搞笑幽默</span>
-          </div>
-          <p class="marketing-card-detail">
-            三層 AI 架構：基礎規則 + 風格語調 + 在地脈絡。
-            Hook-Story-Offer 結構，每一篇都是精準說服。
-          </p>
-        </div>
-
-        <div class="marketing-card reveal">
-          <div class="marketing-card-icon">
-            <svg viewBox="0 0 48 48" fill="none" width="28" height="28"><rect x="6" y="6" width="36" height="36" rx="6" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18" r="4" stroke="currentColor" stroke-width="2"/><path d="M6 32l10-10 8 8 8-12 10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h4 class="marketing-card-title">AI 美圖</h4>
-          <p class="marketing-card-desc">食物美顏、菜單形象照、奇幻合成</p>
-          <p class="marketing-card-detail">
-            上傳食物照片，AI 自動美顏提升質感。還能去背換背景做菜單形象照，或合成趣味行銷圖。
-          </p>
-        </div>
-
-        <div class="marketing-card reveal">
-          <div class="marketing-card-icon">
-            <svg viewBox="0 0 48 48" fill="none" width="28" height="28"><circle cx="16" cy="24" r="10" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="24" r="10" stroke="currentColor" stroke-width="2"/><path d="M24 17.6a10 10 0 010 12.8" stroke="currentColor" stroke-width="2"/></svg>
-          </div>
-          <h4 class="marketing-card-title">線上點餐系統 <span class="pro-badge">Pro</span></h4>
-          <p class="marketing-card-desc">零抽成，賺的都是你的</p>
-          <p class="marketing-card-detail">
-            不像外送平台抽 30%。顧客直接在 App 點餐，店家自己收款。訂單即時通知 + 食客對話。Pro 訂閱專屬。
-          </p>
-        </div>
-      </div>
-
-      <!-- Marketing Stats -->
-      <div class="marketing-stats reveal">
-        <div class="marketing-stat">
-          <span class="marketing-stat-num">10 秒</span>
-          <span class="marketing-stat-label">生成一篇社群文案</span>
-        </div>
-        <div class="marketing-stat-divider"></div>
-        <div class="marketing-stat">
-          <span class="marketing-stat-num">2 分鐘</span>
-          <span class="marketing-stat-label">產出一支短影音</span>
-        </div>
-        <div class="marketing-stat-divider"></div>
-        <div class="marketing-stat">
-          <span class="marketing-stat-num">6 種</span>
-          <span class="marketing-stat-label">病毒路線策略</span>
-        </div>
-        <div class="marketing-stat-divider"></div>
-        <div class="marketing-stat">
-          <span class="marketing-stat-num">0%</span>
-          <span class="marketing-stat-label">點餐抽成費用</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 2. Demo Section -->
-  <section class="section demo-section" id="demo">
-    <div class="container">
-      <div class="section-header section-header--center">
-        <span class="section-tag">DEMO</span>
-        <h2 class="section-title">實際產出範例</h2>
-        <p class="section-desc">以下內容 100% 由 AI 自動生成 — 從腳本、鏡頭、旁白到字幕，全部一鍵完成</p>
-      </div>
-
-      <div class="demo-grid">
-        <div class="demo-card reveal">
-          <div class="demo-video-wrapper">
-            <video
-              class="demo-video"
-              src="videos/demo-1.mp4"
-              controls
-              playsinline
-              preload="metadata"
-            ></video>
-            <div class="demo-video-placeholder">
-              <svg viewBox="0 0 48 48" fill="none" width="48" height="48"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M20 16l12 8-12 8z" fill="currentColor"/></svg>
-              <span>影片載入中...</span>
-            </div>
-          </div>
-          <div class="demo-info">
-            <span class="demo-route-tag">AI 自動生成</span>
-            <p class="demo-caption">爆款短影音 — 全自動產出範例</p>
-          </div>
-        </div>
-
-        <div class="demo-card reveal">
-          <div class="demo-image-wrapper">
-            <img class="demo-image" src="videos/S__28033027.jpg" alt="AI 文案生成範例 — 溫馨暖心風格" loading="lazy">
-          </div>
-          <div class="demo-info">
-            <span class="demo-route-tag">AI 文案生成</span>
-            <p class="demo-caption">溫馨暖心風格 — 含照片美顏對比</p>
-          </div>
-        </div>
-
-        <!-- 奇幻合成 Demo -->
-        <div class="demo-card reveal">
-          <div class="demo-visual">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-              <img class="demo-image" src="videos/fun-photo-person1.jpg" alt="原始人物照片" loading="lazy" style="border-radius: 12px;">
-              <img class="demo-image" src="videos/fun-photo-food1.jpg" alt="原始美食照片" loading="lazy" style="border-radius: 12px;">
-              <img class="demo-image" src="videos/fun-photo-result1.png" alt="AI 奇幻合成結果 1" loading="lazy" style="border-radius: 12px;">
-              <img class="demo-image" src="videos/fun-photo-result2.png" alt="AI 奇幻合成結果 2" loading="lazy" style="border-radius: 12px;">
-            </div>
-          </div>
-          <div class="demo-info">
-            <span class="demo-route-tag">AI 奇幻合成</span>
-            <p class="demo-caption">上傳人物 + 美食照片，AI 把人縮小合成到食物場景中</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3. Merchant Section — 完整功能 -->
-  <section class="section merchant-section" id="merchant">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">FOR MERCHANTS</span>
-        <h2 class="section-title">美食抵家 — 商家版</h2>
-        <p class="section-desc">行銷之外，完整的店家營運工具</p>
-      </div>
-
-      <div class="merchant-hero reveal">
-        <div class="merchant-hero-text">
-          <h3 class="merchant-hero-title">
-            不只做行銷，<br>
-            <span class="text-amber">整間店都幫你管。</span>
-          </h3>
-          <p class="merchant-hero-desc">
-            菜單管理、零抽成點餐、優惠券發放、營運數據分析。<br>
-            AI 顧問隨時回答你的經營問題，每日教練報告自動送到手上。
-          </p>
-        </div>
-        <div class="merchant-hero-visual">
-          <div class="phone-mockup phone-mockup-merchant">
-            <div class="phone-screen">
-              <div class="phone-status-bar">
-                <span>9:41</span>
-                <span></span>
-              </div>
-              <div class="phone-app merchant-app">
-                <div class="merchant-tab-bar">
-                  <span class="merchant-tab active">行銷</span>
-                  <span class="merchant-tab">數據</span>
-                  <span class="merchant-tab">顧問</span>
-                  <span class="merchant-tab">報告</span>
-                </div>
-                <div class="merchant-card">
-                  <div class="merchant-card-label">爆款短影音</div>
-                  <div class="merchant-card-title">一鍵生成 15 秒短影音</div>
-                  <div class="merchant-card-desc">上傳 4 張美食照，AI 自動產出旁白、字幕、配樂</div>
-                </div>
-                <div class="merchant-card">
-                  <div class="merchant-card-label">AI 文案</div>
-                  <div class="merchant-card-title">6 種風格任你挑</div>
-                  <div class="merchant-card-desc">熱情活潑、專業質感、搞笑幽默...</div>
-                </div>
-                <div class="phone-btn">開始生成</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Merchant Features Grid -->
-      <div class="merchant-features-grid">
-        <div class="merchant-feature-card reveal">
-          <div class="merchant-feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" width="26" height="26"><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/><path d="M8 16h32M16 8v32" stroke="currentColor" stroke-width="2"/><circle cx="28" cy="28" r="4" stroke="currentColor" stroke-width="2"/></svg>
-          </div>
-          <h4 class="merchant-feature-title">菜單管理</h4>
-          <p class="merchant-feature-desc">分類整理、照片上傳、招牌菜標記，食物照還能一鍵 AI 美顏。</p>
-        </div>
-        <div class="merchant-feature-card reveal">
-          <div class="merchant-feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" width="26" height="26"><path d="M12 36l6-8 6 4 6-12 6 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/></svg>
-          </div>
-          <h4 class="merchant-feature-title">數據儀表板</h4>
-          <p class="merchant-feature-desc">曝光、收藏、領券、核銷趨勢一目了然。大字體設計，老闆一看就懂。</p>
-        </div>
-        <div class="merchant-feature-card reveal">
-          <div class="merchant-feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" width="26" height="26"><path d="M6 36V14a4 4 0 014-4h28a4 4 0 014 4v16a4 4 0 01-4 4H12l-6 6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M18 18l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h4 class="merchant-feature-title">AI 顧問</h4>
-          <p class="merchant-feature-desc">隨時問營運數據、客群分析、改善建議。用聊天的方式掌握你的生意。</p>
-        </div>
-        <div class="merchant-feature-card reveal">
-          <div class="merchant-feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" width="26" height="26"><path d="M8 12h32v28H8z" stroke="currentColor" stroke-width="2"/><path d="M16 8v8M32 8v8M8 20h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 26h6M16 32h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h4 class="merchant-feature-title">AI 教練報告</h4>
-          <p class="merchant-feature-desc">每天凌晨自動生成，巴豆妖分析你的營運數據，給出具體行動建議。</p>
-        </div>
-        <div class="merchant-feature-card reveal">
-          <div class="merchant-feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" width="26" height="26"><path d="M14 8h20l6 10-16 24L8 18z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 18h32M20 18l4 24 4-24" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-          </div>
-          <h4 class="merchant-feature-title">優惠券系統</h4>
-          <p class="merchant-feature-desc">折扣 % 或固定金額，設定期限、追蹤使用次數、成效分析一手掌握。</p>
-        </div>
-        <div class="merchant-feature-card reveal">
-          <div class="merchant-feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" width="26" height="26"><rect x="10" y="6" width="28" height="36" rx="4" stroke="currentColor" stroke-width="2"/><path d="M18 14h12M18 22h12M18 30h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="34" cy="34" r="8" fill="white" stroke="currentColor" stroke-width="2"/><path d="M31 34l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h4 class="merchant-feature-title">線上點餐（零抽成） <span class="pro-badge">Pro</span></h4>
-          <p class="merchant-feature-desc">顧客 App 直接下單，零抽成。接單、備餐、通知取餐，搭配即時訊息對話。Pro 訂閱專屬功能。</p>
-        </div>
-        <div class="merchant-feature-card reveal">
-          <div class="merchant-feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" width="26" height="26"><circle cx="14" cy="14" r="6" stroke="currentColor" stroke-width="2"/><circle cx="34" cy="14" r="6" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="34" r="6" stroke="currentColor" stroke-width="2"/><path d="M18.5 18.5l4 11M29.5 18.5l-4 11" stroke="currentColor" stroke-width="2"/></svg>
-          </div>
-          <h4 class="merchant-feature-title">社群一鍵發布 <span class="pro-badge">Pro</span></h4>
-          <p class="merchant-feature-desc">AI 生成的文案、配圖、短影音可直接發布到 Threads 與 Facebook，省去切換 App、上傳的時間。Pro 訂閱專屬。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. Diner Section (消費者版，完整保留) -->
-  <section class="section product" id="diner">
-    <div class="container">
-      <div class="section-header section-header--center">
-        <span class="section-tag">FOR DINERS</span>
-        <h2 class="section-title">美食抵家 — 消費者版</h2>
-        <p class="section-desc">極簡主義的美食決策與紀錄工具</p>
-      </div>
-
-      <div class="product-hero reveal">
-        <div class="product-hero-visual">
-          <div class="phone-mockup">
-            <div class="phone-screen">
-              <div class="phone-status-bar">
-                <span>9:41</span>
-                <span></span>
-              </div>
-              <div class="phone-app">
-                <div class="phone-greeting">午安！今天想吃什麼？</div>
-                <div class="phone-chips">
-                  <span class="phone-chip active">日式</span>
-                  <span class="phone-chip">韓式</span>
-                  <span class="phone-chip">台式</span>
-                  <span class="phone-chip">義式</span>
-                </div>
-                <div class="phone-card">
-                  <div class="phone-card-rating">4.6</div>
-                  <div class="phone-card-name">麵屋一燈</div>
-                  <div class="phone-card-desc">湯頭濃郁、份量充足，老饕級拉麵店</div>
-                  <div class="phone-card-info">
-                    <span>步行 8 分鐘</span>
-                    <span>$200-400</span>
-                  </div>
-                </div>
-                <div class="phone-btn">今天吃這家！</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product-hero-text">
-          <h3 class="product-hero-title">
-            「今天吃什麼？」<br>
-            <span class="text-amber">3 秒搞定。</span>
-          </h3>
-          <p class="product-hero-desc">
-            不再被數十家餐廳的評分、距離和評論淹沒。
-            告訴我們你想吃什麼，AI 直接精選最適合你的 3 家餐廳。
-          </p>
-          <div class="product-stats">
-            <div class="product-stat">
-              <span class="product-stat-num">3</span>
-              <span class="product-stat-label">精選推薦</span>
-            </div>
-            <div class="product-stat">
-              <span class="product-stat-num">30+</span>
-              <span class="product-stat-label">料理細項</span>
-            </div>
-            <div class="product-stat">
-              <span class="product-stat-num">5s</span>
-              <span class="product-stat-label">即時回應</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Diner Features — 移除吉祥物，保留 3 個硬功能 -->
-      <div class="sub-features-grid">
-        <div class="sub-feature reveal">
-          <div class="sub-feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" width="24" height="24"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M24 14v10l7 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <div>
-            <h4 class="sub-feature-title">AI 智慧推薦</h4>
-            <p class="sub-feature-desc">結合 GPS 定位與 Google 評論，自動篩選營業中的優質餐廳，只給你最好的 3 個選擇。</p>
-          </div>
-        </div>
-        <div class="sub-feature reveal">
-          <div class="sub-feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" width="24" height="24"><path d="M8 12h32v28H8z" stroke="currentColor" stroke-width="2"/><path d="M16 8v8M32 8v8M8 20h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="28" r="2" fill="currentColor"/><circle cx="28" cy="28" r="2" fill="currentColor"/></svg>
-          </div>
-          <div>
-            <h4 class="sub-feature-title">優惠券</h4>
-            <p class="sub-feature-desc">瀏覽附近店家優惠，一鍵領取折扣券，結帳時自動折抵。</p>
-          </div>
-        </div>
-        <div class="sub-feature reveal">
-          <div class="sub-feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" width="24" height="24"><path d="M24 4l5.5 11 12 1.7-8.7 8.5 2 12L24 31.6l-10.8 5.6 2-12L6.5 16.7l12-1.7z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-          </div>
-          <div>
-            <h4 class="sub-feature-title">線上點餐</h4>
-            <p class="sub-feature-desc">直接在 App 內向喜歡的店家下單，店家確認後即時通知，搭配訂單聊天讓溝通更順。</p>
-          </div>
-        </div>
-        <div class="sub-feature reveal">
-          <div class="sub-feature-icon">
-            <svg viewBox="0 0 48 48" fill="none" width="24" height="24"><path d="M24 8c-7 0-12 5-12 12 0 5 4 9 8 11l4 9 4-9c4-2 8-6 8-11 0-7-5-12-12-12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="24" cy="20" r="3" fill="currentColor"/></svg>
-          </div>
-          <div>
-            <h4 class="sub-feature-title">社群與點數</h4>
-            <p class="sub-feature-desc">分享美食貼文、收藏喜歡的店家、累積消費點數與成就，記錄屬於你的美食足跡。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- 5. Team Section -->
-  <section class="section" id="team">
-    <div class="container">
-      <div class="section-header section-header--center">
-        <span class="section-tag">OUR TEAM</span>
-        <h2 class="section-title">團隊成員</h2>
-      </div>
-      <div class="team-grid reveal">
-        <div class="team-member team-member--primary">
-          <img src="Kai.jpg" alt="Kai Yang" class="team-photo" loading="lazy">
-          <h3 class="team-name">Kai Yang</h3>
-          <p class="team-role">Founder & CEO</p>
-          <p class="team-bio">數位 IC 設計工程師轉型創業。65 小時田野調查、40 位餐廳老闆的真實心聲，催生了美食抵家。</p>
-          <a href="https://www.linkedin.com/in/%E6%99%BA%E5%87%B1-%E6%A5%8A-b2a56428b/" target="_blank" rel="noopener" class="team-linkedin" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-        </div>
-        <div class="team-member">
-          <img src="WeiLin.jpg" alt="Wei Lin" class="team-photo" loading="lazy">
-          <h3 class="team-name">Wei Lin</h3>
-          <p class="team-role">Co-Founder</p>
-          <p class="team-bio">台北科大電子所碩士</p>
-          <a href="https://www.linkedin.com/in/%E5%B3%BB%E8%91%B3-%E6%9E%97-366305388/" target="_blank" rel="noopener" class="team-linkedin" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-        </div>
-        <div class="team-member">
-          <img src="Andy.jpg" alt="Andy Lin" class="team-photo" loading="lazy">
-          <h3 class="team-name">Andy Lin</h3>
-          <p class="team-role">Co-Founder</p>
-          <p class="team-bio">中央大學網學所碩士</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- 5. About Section -->
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="section-header section-header--center">
-        <span class="section-tag">ABOUT US</span>
-        <h2 class="section-title">關於 Kairos AI</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-card reveal">
-          <div class="about-card-icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 40V24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M24 24c0-8 6-14 14-14-2 8-8 14-14 14z" stroke="currentColor" stroke-width="2.5" fill="none"/><path d="M24 30c0-6-5-11-12-11 2 7 7 11 12 11z" stroke="currentColor" stroke-width="2.5" fill="none"/></svg></div>
-          <h3 class="about-card-title">時機</h3>
-          <p class="about-card-text">
-            Kairos 源自古希臘語，意指「決定性的一刻」——不是時間的長度，而是時間的重量。
-            當 AI 正在改變每一個產業的運作方式，我們看見了這個屬於創造者的時刻，選擇在此刻出發。
-          </p>
-        </div>
-        <div class="about-card reveal">
-          <div class="about-card-icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6a14 14 0 00-6 26.6V36a2 2 0 002 2h8a2 2 0 002-2v-3.4A14 14 0 0024 6z" stroke="currentColor" stroke-width="2.5"/><path d="M20 42h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M24 14v6M20 18h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <h3 class="about-card-title">初衷</h3>
-          <p class="about-card-text">
-            我們不追求最複雜的技術，而是追求最貼近生活的應用。
-            AI 不該是讓人感到距離的存在，而是像一個懂你的朋友，在你需要的時候剛好出現。
-          </p>
-        </div>
-        <div class="about-card reveal">
-          <div class="about-card-icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6c-4 6-6 14-4 22l6 6 6-6c2-8 0-16-4-22z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><circle cx="24" cy="20" r="4" stroke="currentColor" stroke-width="2.5"/><path d="M14 30l-4 4 6 2M34 30l4 4-6 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <h3 class="about-card-title">下一步</h3>
-          <p class="about-card-text">
-            從解決「今天吃什麼」開始，我們正在探索更多 AI 能為日常生活帶來價值的場景。
-            每一款產品的起點，都是一個真實存在的小困擾。
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6. CTA Section -->
-  <section class="section cta">
-    <div class="container">
-      <div class="cta-card reveal">
-        <h2 class="cta-title">準備好讓 AI 幫你做行銷了嗎？</h2>
-        <p class="cta-desc">基礎功能永久免費 ｜ Pro 版 NT$1,190/月（含線上點餐、社群一鍵發布、AI 額度提升）｜ 新店家享免費試用</p>
-        <div class="cta-badges-group">
-          <div class="cta-badges-label">商家版</div>
-          <div class="cta-badges">
-            <a href="https://apps.apple.com/tw/app/%E7%BE%8E%E9%A3%9F%E6%8A%B5%E5%AE%B6-%E5%95%86%E5%AE%B6%E7%89%88/id6756526037" target="_blank" rel="noopener" class="store-badge">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              <div>
-                <span class="store-badge-sub">下載於</span>
-                <span class="store-badge-main">App Store</span>
-              </div>
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.kairosai.msdj" target="_blank" rel="noopener" class="store-badge">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
-              <div>
-                <span class="store-badge-sub">下載於</span>
-                <span class="store-badge-main">Google Play</span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="cta-badges-group">
-          <div class="cta-badges-label">消費者版</div>
-          <div class="cta-badges">
-            <a href="https://apps.apple.com/tw/app/id6761425896" target="_blank" rel="noopener" class="store-badge">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              <div>
-                <span class="store-badge-sub">下載於</span>
-                <span class="store-badge-main">App Store</span>
-              </div>
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.msdj.foodie" target="_blank" rel="noopener" class="store-badge">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
-              <div>
-                <span class="store-badge-sub">下載於</span>
-                <span class="store-badge-main">Google Play</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. Contact Section -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-header section-header--center">
-        <span class="section-tag">CONTACT</span>
-        <h2 class="section-title">聯絡我們</h2>
-        <p class="section-desc">有任何問題或合作提案，歡迎來信</p>
-      </div>
-      <div class="contact-info reveal">
-        <div class="contact-card">
-          <div class="contact-icon"><svg viewBox="0 0 48 48" fill="none" width="36" height="36"><rect x="6" y="12" width="36" height="24" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M6 16l18 10 18-10" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg></div>
-          <h3 class="contact-label">電子郵件</h3>
-          <a href="mailto:service@kairosailab.com" class="contact-value">service@kairosailab.com</a>
-          <p class="contact-value-en">公司合作 / 一般洽詢</p>
-          <a href="mailto:msdj.svc@kairosailab.com" class="contact-value" style="margin-top: 8px;">msdj.svc@kairosailab.com</a>
-          <p class="contact-value-en">美食抵家 App 客服</p>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon"><svg viewBox="0 0 48 48" fill="none" width="36" height="36"><rect x="10" y="8" width="28" height="34" rx="3" stroke="currentColor" stroke-width="2.5"/><path d="M18 16h4M26 16h4M18 24h4M26 24h4M18 32h4M26 32h4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div>
-          <h3 class="contact-label">公司名稱</h3>
-          <p class="contact-value">凱洛斯智慧科技有限公司</p>
-          <p class="contact-value-en">Kairos AI Technology Ltd.</p>
-          <p class="contact-value-en" style="margin-top: 6px;">統一編號 60376125</p>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon"><svg viewBox="0 0 48 48" fill="none" width="36" height="36"><path d="M24 4C17.4 4 12 9.4 12 16c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="16" r="5" stroke="currentColor" stroke-width="2.5"/></svg></div>
-          <h3 class="contact-label">公司地址 / 客服時間</h3>
-          <p class="contact-value">苗栗縣竹南鎮</p>
-          <p class="contact-value-en" style="margin-top: 6px;">客服時間：週一至週五 09:00–18:00</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <span class="nav-logo-icon">K</span>
-          <span class="footer-brand-text">Kairos AI</span>
-        </div>
-        <nav class="footer-legal">
-          <a href="https://eatwhat-app-479407.web.app/privacy" target="_blank" rel="noopener">隱私權政策</a>
-          <span class="footer-legal-divider">·</span>
-          <a href="https://eatwhat-app-479407.web.app/terms" target="_blank" rel="noopener">服務條款（食客版）</a>
-          <span class="footer-legal-divider">·</span>
-          <a href="https://eatwhat-app-479407.web.app/merchant-terms" target="_blank" rel="noopener">店家服務條款</a>
-        </nav>
-        <p class="footer-copy">
-          &copy; 2026 凱洛斯智慧科技有限公司 Kairos AI Technology Ltd. All rights reserved.
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">台灣美食社群與餐飲 AI 行銷平台</p>
+        <h1 id="hero-title">美食抵家</h1>
+        <p class="hero-lead">幫你找到想吃的店，也幫餐廳把好內容變成生意。</p>
+        <p class="hero-copy">
+          美食抵家讓食客收藏餐廳、分享打卡、和朋友建立共同口袋；也協助店家把照片、菜單與顧客內容，轉成美圖、文案、短影音與活動素材。
         </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#demo">看成果展示</a>
+          <a class="btn btn-secondary" href="#positioning">了解美食抵家</a>
+        </div>
       </div>
+      <div class="hero-summary" aria-label="美食抵家服務摘要">
+        <div>
+          <span>給食客</span>
+          <strong>找店、收藏、打卡、共同口袋</strong>
+        </div>
+        <div>
+          <span>給餐廳</span>
+          <strong>美圖、文案、短影音、活動素材</strong>
+        </div>
+        <div>
+          <span>從哪裡開始</span>
+          <strong>中壢 / 中原起步，逐步擴展全台</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="positioning">
+      <div class="container">
+        <div class="section-kicker">What We Do</div>
+        <div class="split-heading">
+          <h2>美食抵家連接兩件事：有人想找到好吃的店，店家想被更多對的人看見。</h2>
+          <p>
+            對食客來說，這是一個記錄、收藏、分享美食的社群 App。對餐廳來說，這是一套 AI 輔助的行銷服務，協助把日常素材整理成可以發布、可以追蹤、可以持續使用的內容。
+          </p>
+        </div>
+
+        <div class="pillars">
+          <article class="pillar reveal">
+            <span class="pillar-num">01</span>
+            <h3>發現與收藏好店</h3>
+            <p>食客可以探索附近餐廳，把想吃、吃過、朋友推薦的店整理成自己的美食地圖。</p>
+          </article>
+          <article class="pillar reveal">
+            <span class="pillar-num">02</span>
+            <h3>和朋友一起決定去哪吃</h3>
+            <p>共同口袋讓朋友之間的「下次吃這家」變成清楚的清單，也讓推薦更像真實關係。</p>
+          </article>
+          <article class="pillar reveal">
+            <span class="pillar-num">03</span>
+            <h3>幫餐廳把內容變行銷</h3>
+            <p>店家照片、菜單特色與顧客打卡，可以被整理成社群文案、美圖、活動素材與短影音腳本。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flywheel-section" aria-labelledby="flywheel-title">
+      <div class="container">
+        <div class="section-kicker">How It Works</div>
+        <div class="section-title-row">
+          <h2 id="flywheel-title">從一則打卡，到一份店家可以使用的行銷素材。</h2>
+          <p>使用者產生真實內容，平台整理成資料與素材，店家再用它做社群經營。</p>
+        </div>
+
+        <div class="flywheel">
+          <div class="flywheel-step reveal">
+            <span>1</span>
+            <h3>食客分享</h3>
+            <p>拍照打卡、留下評語、收藏餐廳，建立自己和朋友的美食記錄。</p>
+          </div>
+          <div class="flywheel-step reveal">
+            <span>2</span>
+            <h3>平台整理</h3>
+            <p>把餐點、店家特色、顧客內容整理成清楚可用的資料與素材。</p>
+          </div>
+          <div class="flywheel-step reveal">
+            <span>3</span>
+            <h3>AI 協助</h3>
+            <p>協助產生美圖、文案、活動提案、短影音腳本與成效摘要。</p>
+          </div>
+          <div class="flywheel-step reveal">
+            <span>4</span>
+            <h3>店家發布</h3>
+            <p>餐廳得到更容易發布的社群內容，也知道下一步該怎麼經營。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section merchant-section" id="merchant">
+      <div class="container">
+        <div class="section-kicker">For Restaurants</div>
+        <div class="split-heading">
+          <h2>讓餐廳不用養完整行銷團隊，也能穩定做出社群內容。</h2>
+          <p>
+            多數店家都知道社群很重要，但缺少時間、素材、文案與穩定更新節奏。美食抵家協助店家整理素材、產出內容、包裝活動，讓老闆更輕鬆把好產品說出去。
+          </p>
+        </div>
+
+        <div class="merchant-grid">
+          <article class="feature reveal">
+            <h3>內容資產庫</h3>
+            <p>集中管理店家照片、菜色賣點、顧客打卡、社群可用素材，讓每次行銷不再從零開始。</p>
+          </article>
+          <article class="feature reveal">
+            <h3>魔法相機與菜單形象</h3>
+            <p>將普通手機照轉成更適合社群、菜單與活動頁的視覺素材，先解決店家最常見的質感落差。</p>
+          </article>
+          <article class="feature reveal">
+            <h3>文案與活動企劃</h3>
+            <p>依據店家定位、餐點特色與在地情境，產生貼文、限動、優惠活動與節慶企劃草稿。</p>
+          </article>
+          <article class="feature reveal">
+            <h3>短影音工作流</h3>
+            <p>把店家照片、餐點賣點與活動訊息整理成適合社群平台的短影音腳本與素材方向。</p>
+          </article>
+          <article class="feature reveal">
+            <h3>UGC 再利用</h3>
+            <p>把食客真實內容轉化為店家可引用、可整理、可再發布的社群證據，降低生硬廣告感。</p>
+          </article>
+          <article class="feature reveal">
+            <h3>成效快報</h3>
+            <p>用簡單語言回報曝光、互動、收藏、領券與內容表現，讓老闆知道下一步該做什麼。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section demo-section" id="demo">
+      <div class="container">
+        <div class="section-kicker">Examples</div>
+        <div class="section-title-row">
+          <h2>店家可以拿到什麼樣的素材？</h2>
+          <p>以下是目前展示用範例，實際合作時會依照店家風格、餐點特色與活動目標調整。</p>
+        </div>
+
+        <div class="demo-layout">
+          <article class="demo-panel demo-panel-image reveal">
+            <div class="demo-media-frame magic-camera-frame">
+              <div class="magic-camera-pair" aria-label="魔法相機處理前後對照">
+                <figure class="magic-image-card">
+                  <img src="videos/magic-camera-original.jpg" alt="魔法相機處理前的餐點照片" loading="lazy">
+                  <figcaption>原圖</figcaption>
+                </figure>
+                <figure class="magic-image-card">
+                  <img src="videos/magic-camera-result.jpg" alt="魔法相機處理後的餐點照片" loading="lazy">
+                  <figcaption>魔法相機</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="demo-panel-body">
+              <p class="demo-label">魔法相機</p>
+              <h3>把日常手機照變成更有食慾的餐點形象照。</h3>
+              <p>保留餐點主角，整理光線、背景與構圖，讓店家的日常素材更適合社群、菜單與活動頁使用。</p>
+            </div>
+          </article>
+
+          <article class="demo-panel demo-panel-video reveal">
+            <div class="demo-media-frame video-frame">
+              <video src="videos/restaurant-short-video-demo.mp4" controls playsinline preload="metadata"></video>
+            </div>
+            <div class="demo-panel-body">
+              <p class="demo-label">AI 輔助短影音</p>
+              <h3>把店家素材整理成適合社群的短影音。</h3>
+              <p>從餐點賣點、腳本到素材方向，協助店家更快產出可以測試的短影音內容。</p>
+            </div>
+          </article>
+
+          <article class="demo-panel demo-panel-system reveal">
+            <div class="asset-stack" aria-label="UGC 到行銷資產流程示意">
+              <div>
+                <span>Social Content</span>
+                <strong>顧客打卡</strong>
+                <small>真實照片 / 評語 / 朋友推薦</small>
+              </div>
+              <div>
+                <span>AI Assist</span>
+                <strong>素材整理</strong>
+                <small>賣點萃取 / 圖文改寫 / 腳本草稿</small>
+              </div>
+              <div>
+                <span>Store Marketing</span>
+                <strong>商家交付</strong>
+                <small>貼文 / 美圖 / 活動 / 成效快報</small>
+              </div>
+            </div>
+            <div class="demo-panel-body">
+              <p class="demo-label">內容資產工作流</p>
+              <h3>把社群內容變成餐廳能持續使用的資產。</h3>
+              <p>餐廳不只需要一張圖或一支影片，而是需要一套能持續累積、整理、發布的內容流程。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section diner-section" id="diner">
+      <div class="container diner-grid">
+        <div>
+          <div class="section-kicker">For Diners</div>
+          <h2>給食客：把想吃、吃過、朋友推薦的店整理起來。</h2>
+          <p class="large-copy">
+            你可以用美食抵家找附近餐廳、收藏想吃的店、記錄真的吃過的地方，也可以和朋友建立共同口袋，把「下次吃這家」變成一份真的會被打開的清單。
+          </p>
+        </div>
+
+        <div class="phone-shell reveal" aria-label="消費者 App 概念畫面">
+          <div class="phone-top">
+            <span>9:41</span>
+            <span>美食抵家</span>
+          </div>
+          <div class="app-screen">
+            <div class="app-card app-card-main">
+              <span>共同口袋</span>
+              <strong>今晚和阿宏想吃的 5 家</strong>
+              <p>牛肉麵、串燒、泰式、宵夜、甜點</p>
+            </div>
+            <div class="app-list">
+              <div>
+                <strong>老街炭火燒肉</strong>
+                <span>2 位朋友收藏</span>
+              </div>
+              <div>
+                <strong>中原巷口麵線</strong>
+                <span>剛被打卡 3 次</span>
+              </div>
+              <div>
+                <strong>週末甜點地圖</strong>
+                <span>圖鑑進度 7 / 12</span>
+              </div>
+            </div>
+            <button type="button">加入今天想吃</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="diner-features">
+          <article class="mini-feature reveal">
+            <h3>真實打卡</h3>
+            <p>讓用戶留下自己真的去過、真的吃過的內容。</p>
+          </article>
+          <article class="mini-feature reveal">
+            <h3>共同口袋</h3>
+            <p>把朋友之間的「下次吃這家」變成可完成的清單。</p>
+          </article>
+          <article class="mini-feature reveal">
+            <h3>餐廳圖鑑</h3>
+            <p>讓在地探索有進度感，減少一直滑列表卻不知道吃什麼的疲乏。</p>
+          </article>
+          <article class="mini-feature reveal">
+            <h3>巴豆妖養成</h3>
+            <p>讓紀錄、分享與回訪有輕量遊戲化動機。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rollout-section" id="rollout">
+      <div class="container">
+        <div class="section-kicker">Rollout</div>
+        <div class="split-heading">
+          <h2>我們會從中壢與中原開始服務，逐步擴展到更多城市。</h2>
+          <p>
+            中壢與中原有高密度餐廳、學生與上班族，是很適合開始建立美食社群與店家合作的地方。當使用者內容、店家合作與行銷素材流程跑順後，我們會把同一套方式複製到更多商圈與城市。
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span>第一階段</span>
+            <h3>中壢 / 中原</h3>
+            <p>建立第一批食客內容、餐廳資料、共同口袋與店家合作案例。</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>第二階段</span>
+            <h3>桃園重點商圈</h3>
+            <p>把成熟的店家服務流程與食客社群玩法，推到更多餐飲密集區。</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>第三階段</span>
+            <h3>更多城市</h3>
+            <p>與在地店家、商圈、校園與內容創作者合作，建立城市級美食資料與內容網路。</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>長期目標</span>
+            <h3>全台餐飲品牌</h3>
+            <p>讓更多餐廳都能透過美食抵家，取得顧客內容、AI 行銷素材與成長建議。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section company-section" id="company">
+      <div class="container company-grid">
+        <div>
+          <div class="section-kicker">Company</div>
+          <h2>由凱洛斯智慧科技有限公司打造。</h2>
+          <p class="large-copy">
+            我們正在打造一個從食客社群出發的餐飲科技平台。美食抵家從餐飲開始，因為這裡有大量真實內容需求，也有最貼近日常生活的在地關係。
+          </p>
+        </div>
+        <div class="company-notes reveal">
+          <div>
+            <strong>產品組成</strong>
+            <span>在地美食社群 + 商家 AI 行銷交付</span>
+          </div>
+          <div>
+            <strong>目前起點</strong>
+            <span>中壢 / 中原商圈與在地餐飲店家</span>
+          </div>
+          <div>
+            <strong>長期願景</strong>
+            <span>讓台灣餐飲品牌零摩擦接上 AI 世代</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team-section" id="team">
+      <div class="container">
+        <div class="section-kicker">Team</div>
+        <div class="section-title-row">
+          <h2>核心團隊</h2>
+          <p>美食抵家的產品、商務與 AI 工作流由創辦團隊直接推進，從店家合作、使用者研究到平台開發都親自下場。</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="team-photo">
+              <img src="Kai.jpg" alt="Kai 團隊照片" loading="lazy">
+            </div>
+            <div class="team-body">
+              <p class="team-role">Founder / CEO</p>
+              <h3>Kai Yang</h3>
+              <a class="team-link" href="https://www.linkedin.com/in/%E6%99%BA%E5%87%B1-%E6%A5%8A-b2a56428b/" target="_blank" rel="noopener noreferrer" aria-label="Kai Yang 的 LinkedIn">LinkedIn</a>
+              <p>負責公司策略、募資與對外合作，主導加速器、政府補助、商家拓展與市場推進。</p>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-photo">
+              <img src="WeiLin.jpg" alt="Wei Lin 團隊照片" loading="lazy">
+            </div>
+            <div class="team-body">
+              <p class="team-role">Co-founder / Engineering</p>
+              <h3>Wei Lin</h3>
+              <a class="team-link" href="https://www.linkedin.com/in/%E5%B3%BB%E8%91%B3-%E6%9E%97-366305388/" target="_blank" rel="noopener noreferrer" aria-label="Wei Lin 的 LinkedIn">LinkedIn</a>
+              <p>負責產品工程、後端資料與 AI 工作流整合，支援食客端、商家端與內容生成系統的落地。</p>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-photo">
+              <img src="Andy.jpg" alt="Andy 團隊照片" loading="lazy">
+            </div>
+            <div class="team-body">
+              <p class="team-role">Co-founder / Product & Growth</p>
+              <h3>Andy</h3>
+              <p>負責產品規劃、使用者研究與成長實驗，協助把在地社群、內容營運與商家需求串成可執行流程。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div>
+            <div class="section-kicker">Contact</div>
+            <h2>想合作、試用或聊聊投資，都可以從這裡開始。</h2>
+            <p>我們正在尋找願意一起打造新餐飲成長模式的店家、商圈夥伴、加速器與投資人。</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:service@kairosailab.com">service@kairosailab.com</a>
+            <span>法人名稱：凱洛斯智慧科技有限公司</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#top">
+        <span class="brand-mark">食</span>
+        <span class="brand-name">美食抵家</span>
+      </a>
+      <p>&copy; 2026 凱洛斯智慧科技有限公司. All rights reserved.</p>
     </div>
   </footer>
 
