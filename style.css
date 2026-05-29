@@ -563,7 +563,7 @@ h3 {
   margin: 0;
   border: 1px solid rgba(74, 60, 45, 0.16);
   border-radius: 8px;
-  background: var(--card);
+  background: var(--white);
   box-shadow: 0 16px 34px rgba(48, 35, 25, 0.12);
 }
 
@@ -944,6 +944,12 @@ h3 {
   color: var(--white);
 }
 
+.footer-meta {
+  display: grid;
+  gap: 4px;
+  text-align: right;
+}
+
 .footer p {
   margin: 0;
   font-size: 13px;
@@ -1150,6 +1156,10 @@ h3 {
   .footer-inner {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .footer-meta {
+    text-align: left;
   }
 }
 
