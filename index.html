@@ -9,7 +9,14 @@
   <meta property="og:description" content="連接在地食客社群與餐廳營運工具。Diner 幫食客找到好店；Merchant 幫店家認領、接單、管理優惠券與製作 AI 圖文素材。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kairosailab.com">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect rx='22' width='100' height='100' fill='%23B85C38'/%3E%3Ctext x='50' y='62' text-anchor='middle' fill='white' font-size='52' font-weight='800' font-family='Arial,sans-serif'%3E食%3C/text%3E%3C/svg%3E">
+  <meta property="og:image" content="https://storage.googleapis.com/msdj-cold-start-web-assets/cold-start-web/v1/assets/brand/app_logo_sticker.png">
+  <meta property="og:image:alt" content="美食抵家 Logo">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="凱洛斯智慧科技｜美食抵家">
+  <meta name="twitter:description" content="連接在地食客社群與餐廳營運工具。">
+  <meta name="twitter:image" content="https://storage.googleapis.com/msdj-cold-start-web-assets/cold-start-web/v1/assets/brand/app_logo_sticker.png">
+  <link rel="icon" type="image/png" href="https://storage.googleapis.com/msdj-cold-start-web-assets/cold-start-web/v1/assets/brand/app_logo_sticker.png">
+  <link rel="preconnect" href="https://storage.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
@@ -19,7 +26,7 @@
   <nav class="site-nav" id="siteNav" aria-label="主選單">
     <div class="nav-inner">
       <a class="brand" href="#top" aria-label="回到首頁">
-        <span class="brand-mark">食</span>
+        <span class="brand-mark" aria-hidden="true"><img src="https://storage.googleapis.com/msdj-cold-start-web-assets/cold-start-web/v1/assets/brand/app_logo_sticker.png" alt="" width="600" height="555"></span>
         <span class="brand-name">美食抵家</span>
       </a>
       <button class="nav-toggle" id="navToggle" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="navLinks">
@@ -381,42 +388,30 @@
         <div class="section-kicker">Team</div>
         <div class="section-title-row">
           <h2>核心團隊</h2>
-          <p>美食抵家的產品、商務與 AI 工作流由創辦團隊直接推進，從店家合作、使用者研究到平台開發都親自下場。</p>
+          <p>美食抵家的商務開發與產品工作由兩位共同創辦人直接推進，從找店合作、產品規劃到開發都親自下場。</p>
         </div>
 
         <div class="team-grid">
           <article class="team-card reveal">
             <div class="team-photo">
-              <img src="Kai.jpg" alt="Kai 團隊照片" loading="lazy">
-            </div>
-            <div class="team-body">
-              <p class="team-role">Founder / CEO</p>
-              <h3>Kai Yang</h3>
-              <a class="team-link" href="https://www.linkedin.com/in/%E6%99%BA%E5%87%B1-%E6%A5%8A-b2a56428b/" target="_blank" rel="noopener noreferrer" aria-label="Kai Yang 的 LinkedIn">LinkedIn</a>
-              <p>負責公司策略、募資與對外合作，主導加速器、政府補助、商家拓展與市場推進。</p>
-            </div>
-          </article>
-
-          <article class="team-card reveal">
-            <div class="team-photo">
-              <img src="WeiLin.jpg" alt="Wei Lin 團隊照片" loading="lazy">
-            </div>
-            <div class="team-body">
-              <p class="team-role">Co-founder / Engineering</p>
-              <h3>Wei Lin</h3>
-              <a class="team-link" href="https://www.linkedin.com/in/%E5%B3%BB%E8%91%B3-%E6%9E%97-366305388/" target="_blank" rel="noopener noreferrer" aria-label="Wei Lin 的 LinkedIn">LinkedIn</a>
-              <p>負責產品工程、後端資料與 AI 工作流整合，支援食客端、商家端與內容生成系統的落地。</p>
-            </div>
-          </article>
-
-          <article class="team-card reveal">
-            <div class="team-photo">
               <img src="Andy.jpg" alt="Andy 團隊照片" loading="lazy">
             </div>
             <div class="team-body">
-              <p class="team-role">Co-founder / Product & Growth</p>
+              <p class="team-role">共同創辦人／商務開發</p>
               <h3>Andy</h3>
-              <p>負責產品規劃、使用者研究與成長實驗，協助把在地社群、內容營運與商家需求串成可執行流程。</p>
+              <p>負責尋找店家合作機會，直接了解老闆的經營需求與現場卡點。</p>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-photo">
+              <img src="Kai.jpg" alt="Kai 團隊照片" loading="lazy">
+            </div>
+            <div class="team-body">
+              <p class="team-role">共同創辦人／產品規劃與開發</p>
+              <h3>Kai Yang</h3>
+              <a class="team-link" href="https://www.linkedin.com/in/%E6%99%BA%E5%87%B1-%E6%A5%8A-b2a56428b/" target="_blank" rel="noopener noreferrer" aria-label="Kai Yang 的 LinkedIn">LinkedIn</a>
+              <p>負責產品規劃與開發，把店家需求、內容流程與平台功能接起來。</p>
             </div>
           </article>
         </div>
@@ -444,7 +439,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <a class="brand footer-brand" href="#top">
-        <span class="brand-mark">食</span>
+        <span class="brand-mark" aria-hidden="true"><img src="https://storage.googleapis.com/msdj-cold-start-web-assets/cold-start-web/v1/assets/brand/app_logo_sticker.png" alt="" width="600" height="555"></span>
         <span class="brand-name">美食抵家</span>
       </a>
       <div class="footer-meta">
